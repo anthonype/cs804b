@@ -55,10 +55,7 @@
 		fflores@doitt.nyc.gov}
 
 }
-
-% make the title area
 \maketitle{}
-
 
 \section{Introduction}
 Software development is becoming a mammoth task with the introduction of Big Data and Analytics and the programming languages they use, along with data processing, creation, preparation, and modeling operations. Often, the lack of a complete understanding of the resources required to execute workflows efficiently, data deployment demands expertise for managing the lifecycle of data workflows efficiently and with minimal cost.  Many of DOITT's constituents are looking to operationalize pipelines to support their big data initiatives, but struggle to build effective operations strategies and best practices.  This paper describes a proposal to build a data platform highlighting the problem it resolves.
@@ -67,7 +64,7 @@ In data science, writing code for data loading, transformation and pre-processin
 
 The right cloud platform configurations can enhance performance and minimize cost, which is generally lacking in data developers. According to EMC\cite{EMC}, the requirements for Data Analytics Lifecycle Management is broken down into six phases. 1) Discovery, 2) Data Prep, 3) Model Planning, 4) Model Building, 5) Communicate Results, and 6) Operationalize.
 
-To that end, we propose a data platform which addresses the management lifecycle challenges of data analytics in a cloud centric environment.  The rest of this paper, we present the M otivation in Section II, the Problem Statement and Justification in Sections III and IV, and Objectives.
+To that end, we propose a data platform which addresses the management lifecycle challenges of data analytics in a cloud centric environment.  The rest of this paper, we present the M otivation in Section II, the Problem Statement and Justification in Sections III and IV, Objectives in Section V, and Use Cases.
 %
 %
 %
@@ -98,7 +95,17 @@ Practitioners often overlap with other people during the data lifecycle. Figure 
 \section{Objectives}
 We want to develop this system that will run on the cloud, unlike the current manual system across local agencies. So this system is aimed to solve this entire problem by enabling practitioners to solve business problems quickly, acquire data, process data, model data, communicate results, and deploying data.
 
-We referenced the cross-industry standard process for data mining (CRISP-DM\cite{crisp}).  This lifecycle method defines the best practices spanning from discovery to operationlization.  The result of this study will be valuable to industry practitioners in developing better practices and tools for data management.
+We referenced the cross-industry standard process for data mining (CRISP-DM\cite{crisp}).  This lifecycle method in figure \ref{fig:dataflow} defines the best practices spanning from discovery to operationlization.  For most phases in the lifecycle, the movement can be either forward or backward. This iterative depiction of the lifecycle is intended to more closely portray a real project, in which aspects of the data project move forward and may return to earlier stages as new information is uncovered as engineers learn more about various stages of the project\cite{EMC}.  The result of this study will be valuable to industry practitioners in developing better practices and tools for data management.
+
+\begin{figure}[bth]
+	\centering
+	\scalebox{.5}{\includegraphics{../figures/dalflow.png}}
+	\caption{Data Analytics Lifecycle}
+	\label{fig:dataflow}
+\end{figure}
+
+\section{Use Cases}
+todo:
 
 \section{Acknowledgment}
 We offer our sincerest gratitude to Al Frangella, Omari Holtz, and Dr. Tappert for supporting this research and reviewing the paper.
